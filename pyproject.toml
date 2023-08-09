@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "mlink"
+version = "0.0.1"
+description = "Ha Ha Ha"
+authors = ["KJH <rnwnsgud1234@postech.ac.kr>"]
+readme = "README.md"
+#repository = "https://www.github.com/hwchase17/langchain"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+poetry = "^1.5.1"
+torch = "2.0.0" # 현재 2.0.1 버그 있어서 2.0.0 으로 고정함
+langchain = "^0.0.245"
+peft = {git = "https://github.com/huggingface/peft", rev = "03eb378eb914fbee709ff7c86ba5b1d033b89524"}
+auto-gptq = {url = "https://github.com/PanQiWei/AutoGPTQ/releases/download/v0.2.2/auto_gptq-0.2.2+cu117-cp310-cp310-linux_x86_64.whl#sha256=89a71e3fd0476be214b2720f8723a2789427900af070b88ec126fbb0cf1bf5c7"}
+spacy = "^3.6.0"
+en-core-web-sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl#sha256=83276fc78a70045627144786b52e1f2728ad5e29e5e43916ec37ea9c26a11212"}
+optimum = "^1.10.1"
+sentence-transformers = "^2.2.2"
+chromadb = "^0.4.3"
+openai = "^0.27.8"
+bitsandbytes = "^0.41.0"
+llama-cpp-python = "^0.1.77"
+gradio = "^3.39.0"
+wandb = "^0.15.7"
+tabulate = "^0.9.0"
+class-resolver = "^0.4.2"
+bingbong = {git = "https://github.com/okin1234/PingPong_add_input.git", rev = "99df8751e0c5c6d8e2fd9770b0d950d26643f430"}
+pymongo = "^4.4.1"
+jupyterlab = "^4.0.3"
+pypdf = "^3.15.0"
+google-search-results = "^2.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
